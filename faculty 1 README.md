@@ -1,2 +1,2 @@
-![faculty 1](https://user-images.githubusercontent.com/121348419/210177905-baad4a60-5536-41cf-a742-1d55938bf0fd.jpg)
-# HTML
+![faculty 1](https://user-images.githubusercontent.com/121348419/210178223-a954afeb-3f27-4931-bb19-7a38b749b2c2.jpg)
+
