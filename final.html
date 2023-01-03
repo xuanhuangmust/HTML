@@ -1,0 +1,337 @@
+<html>
+    <head><title>Stray Kids</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:black;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color:white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:#C987FF;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #C987FF; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #E282FF; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #C987FF;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #C987FF;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color:black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#E4BFFF,#B959FF);
+            padding:20px;
+        }
+        .banner h1{
+            padding: 10px;
+        }        
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(217,77,255,.500);
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: flex;
+            justify-content: left;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: rgb(54, 82, 110);
+            justify-content:left;
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: center;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(204,204,255);
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://user-images.githubusercontent.com/121348419/210176384-6cf79a2d-fdf8-41f2-8c6e-f054627b4f0e.jpg">
+                  
+                </div>
+                <div class="top-nav">
+                <a href=>Stray Kids </a>
+                <a href=>入坑指南</a>
+                
+                
+               
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">團體簡介</a></li>
+                <li  class="dropdown"><a href="#faculty">成員簡介</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">方燦</a>
+                        <a href="#faculty">徐彰彬</a>
+                        <a href="#faculty">Han 韓知城</a>
+                        <a href="#faculty">Lee Know 李旻浩</a>
+                        <a href="#faculty">黃鉉辰</a>
+                        <a href="#faculty">Felix 李龍馥</a>
+                        <a href="#faculty">金昇玟</a>
+                        <a href="#faculty">I.N 梁精寅</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">相關資訊</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210175460-e42b82f2-a370-4dc8-a395-0f1806fbf0a7.jpg" /></li>
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176583-8935bfe6-b493-49fb-a31b-54838ab0ff5c.jpg" /></li>
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176635-3be4204e-515b-4d6b-b560-b51c847218ec.jpg" /></li>
+ 
+                     <li><img src="https://user-images.githubusercontent.com/121348419/210176681-d34e134a-3d6a-4747-8260-6a7ea823d614.jpg" /></li>
+
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176705-e827dbc2-8fb1-4d6d-af2a-e110a9ed6441.jpg" /></li>
+
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176738-5b9a8f5e-7ac5-4f05-87e0-255f35c0a0d0.jpg" /></li>
+
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176750-9f856a4e-edba-4499-a8e7-3f5f458a28f9.jpg" /></li>
+
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176769-c441d224-6be9-4088-ada4-3dd1eb6d804b.jpg" /></li>
+
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176783-be5ff132-7666-4c3b-9e33-e04957cd16d2.jpg" /></li>
+
+                    <li><img src="https://user-images.githubusercontent.com/121348419/210176790-18184dd2-27d8-469e-85c2-0134f31279a6.jpg" /></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>團體簡介</h1>
+            <h1>團名Stray Kids</h1>
+            <h1>為迷路的孩子之意，衍生出共同追求夢想、尋找曙光的理念 </h1>
+            <h1>粉絲名為STAY含意為Where Stray Kids STAY
+            意謂STAY會在Stray Kids身邊Stay，Stray Kids也會在STAY身邊Stay，彼此是可以互相依靠、依賴的存在
+            STAY比起Stray少了一個r，這個r代表Reason，也就是說STAY是Stray Kids存在的理由</h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>成員介紹</h2>
+            <h2>3RACHA(製作)</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210178223-a954afeb-3f27-4931-bb19-7a38b749b2c2.jpg" />
+                    <h3>方燦</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210178623-568e7191-ccdf-4c6b-aa1d-7c3d0dfd624e.JPG" />
+                    <h3>徐彰彬</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210178694-ddc06f5f-44ee-437e-9d34-ffedebd98d30.jpg" />
+                    <h3>Han 韓知城</h3>
+                </a>        
+            </div>
+        </div>
+        
+        <div class="faculty"id="faculty">
+            <h2>Dance RACHA</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210179465-f5d4f076-1d08-4f28-a95d-882cc42fb97c.jpg" />
+                    <h3>Lee Know 李旻浩</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210179481-4308fa7b-06cb-414b-93da-b7715507b6e6.JPG" />
+                    <h3>黃鉉辰</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210179499-cdcd2750-e3f9-44d7-b280-4b0590fa820f.jpg" />
+                    <h3>Felix 李龍馥</h3>
+                </a>        
+            </div>
+        </div>
+        
+         <div class="faculty"id="faculty">
+            <h2>Vocal RACHA</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210179783-f284465d-0c17-47b0-bacb-f59489974030.jpg" />
+                    <h3>金昇玟</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://user-images.githubusercontent.com/121348419/210179797-086f4515-dcb3-4f2b-8ab0-d09cf3dc79c0.jpg" />
+                    <h3>I.N 梁精寅</h3>
+                </a>
+                  
+            </div>
+        
+        
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>JYP Entertainment</b>
+                        <span>首爾特別市江東區江東大路199號 大城大廈7樓</span>
+                        <b>IG</b>
+                        <span>@realstraykids</span>
+                        <b>Twitter</b>
+                        <span>@StrayˍKids</span>
+                    </div>
+                     <div class="right">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3142909763824!2d127.12691871492585!3d37.52408793431647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caff437bed0b5%3A0xe83262c2584a987e!2zMjA1IEdhbmdkb25nLWRhZXJvLCBHYW5nZG9uZy1ndSwgU2VvdWwsIOWNl-mfkw!5e0!3m2!1szh-TW!2stw!4v1672761390657!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 stray kids introduce All rights reserved. 維護者 Kate huang
+        </div>
+     </body>
+</html>
